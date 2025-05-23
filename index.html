@@ -84,33 +84,33 @@
     </div>
 
     <div class="passage no-copy" id="passage">
-      <h3>The Digital Vault2- Passage </h3>
-      <p>The Ancient Computer
-Dr. Maya Rodriguez discovered a hidden chamber in the ancient Mayan temple, where a
- crystalline screen flickered to life with blue light. 
- Text appeared in perfect English: "Welcome, seeker of knowledge. 
- To unlock the vault's secrets, you must speak the binary language of ones and zeros.
-  The sacred number is 42—convert this to binary and the treasures shall be revealed. 
-  You have only one chance before the chamber seals forever.
-  " Maya realized she needed to quickly convert 42 into binary code to unlock the ancient technology.
+      <h3>The Stargate Protocol 2 - Passage </h3>
+      <p>The Activation Sequence
+Captain Sarah Nova stood before the alien console in the abandoned space station, 
+its surface covered with strange symbols that pulsed with blue light. 
+The ship's AI had translated the main message: "Portal activation requires the sacred number in the ancient binary tongue." 
+As she examined the control panel, one number stood out prominently—etched in both alien script and human numerals on the central 
+activation button: 37. The console's display showed eight empty slots arranged in a row, each capable of displaying 
+either a 0 or 1, clearly waiting for a binary input. With oxygen running low and no other way off the station, 
+Sarah realized she had to convert the number 37 into binary code to activate the portal and escape back to Earth.
  </p>
       <button onclick="showQuestion()">Next</button>
     </div>
 
     <div class="question" id="question">
-      <h3>Question Select the option 42 and then you convert into binary</h3>
-      <p>Based on the story, Dr. Rodriguez must convert the sacred number 42 to binary to unlock the ancient vault.
-What is the binary equivalent of the decimal number 42 ?
+      <h3>Question Select the option 37 and then you convert into binary</h3>
+      <p>Captain Nova must convert the number 37 to binary to activate the alien portal.
+What is the binary equivalent of the decimal number 37?
 </p>
-      <label><input type="radio" name="mcq" value="A">43</label><br>
-      <label><input type="radio" name="mcq" value="B">422</label><br>
-      <label><input type="radio" name="mcq" value="C">42</label><br>
-      <label><input type="radio" name="mcq" value="D">214</label><br>
+      <label><input type="radio" name="mcq" value="A">37</label><br>
+      <label><input type="radio" name="mcq" value="B">733</label><br>
+      <label><input type="radio" name="mcq" value="C">123</label><br>
+      <label><input type="radio" name="mcq" value="D">3737</label><br>
       <button onclick="checkMCQ()">Submit MCQ</button>
     </div>
 
     <div class="answerBox" id="answerBox">
-      <h3>Enter Your Answer </h3>
+      <h3>Convert the decimal number to binary  </h3>
       <input type="text" id="binaryAnswer" placeholder="enter the binary coverted value answer here">
       <button onclick="submitAnswer()">Submit</button>
     </div>
@@ -118,7 +118,11 @@ What is the binary equivalent of the decimal number 42 ?
     <div class="riddleSection" id="riddleSection">
       <h3>🎉 Correct!</h3>
       <p>Here’s your next riddle:</p>
-      <p><em>" Not a kitchen, but things may burn, It’s where you test and always learn and always "</em></p>
+      <p><em>"I stand where doors open wide,
+Show your card to step inside.
+Come on time, don’t delay,
+Or the way will close away.
+"</em></p>
     </div>
   </div>
 
@@ -158,7 +162,7 @@ What is the binary equivalent of the decimal number 42 ?
 
     function submitAnswer() {
       const answer = document.getElementById('binaryAnswer').value.trim();
-      const correctAnswer = "101010";
+      const correctAnswer = "100101";
 
       if (answer === correctAnswer) {
         document.getElementById('answerBox').style.display = 'none';
